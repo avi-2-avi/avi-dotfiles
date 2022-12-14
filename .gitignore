@@ -1,0 +1,20 @@
+# Ignore all
+/**
+!.gitignore
+!README.md
+!MAPPINGS.md
+!LICENSE
+
+# But not these gems
+
+!/fish/
+!/fish/**
+!/nvim/
+!/nvim/**
+!/alacritty/
+/alacritty/*.bak
+!/alacritty/**
+!/tmux/
+!/tmux/**
+/tmux/plugins/tmux-sensible
+/tmux/plugins/tpm

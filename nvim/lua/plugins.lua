@@ -15,11 +15,15 @@ packer.startup(function(use)
     requires = {'tjdevries/colorbuddy.nvim' } 
   }
   use 'kyazdani42/nvim-web-devicons' --File icons,
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use({  -- LSP UIs
+      "glepnir/lspsaga.nvim",
+      branch = "main",
+      requires = { {"nvim-tree/nvim-web-devicons"} }
+  })
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'hoob3rt/lualine.nvim' -- Statusline
   use 'neovim/nvim-lspconfig' -- LSP
-  use 'simrat39/rust-tools.nvim' -- Rust tools
+
   use 'onsails/lspkind-nvim' -- Vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's build-in LSP
@@ -29,6 +33,7 @@ packer.startup(function(use)
     run = ':TSUpdate'
   }
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP dianostics, code actions and more via Lua
+  use 'MunifTanjim/prettier.nvim' 
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
@@ -43,11 +48,6 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
-  -- install without yarn or npm
-  use({
-      "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  })
-
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 end)

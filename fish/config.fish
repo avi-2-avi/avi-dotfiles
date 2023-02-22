@@ -1,4 +1,5 @@
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Date and Language
 set -x LC_ALL en_US.UTF-8
@@ -46,6 +47,8 @@ alias ll "ls -l"
 alias lla "ll -A"
 alias g git
 command -qv nvim && alias vim nvim
+
+alias p "cd ~/projects/"
 
 if type -q exa
   alias ll "exa -l -g --icons"

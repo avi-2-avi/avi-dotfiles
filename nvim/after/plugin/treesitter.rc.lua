@@ -1,3 +1,5 @@
+-- "I like colors" - Avi
+
 local status, ts = pcall(require, 'nvim-treesitter.configs')
 if (not status) then return end
 
@@ -11,7 +13,14 @@ ts.setup {
     disable = {},
   },
   ensure_installed = {
+    'markdown', 
+    'markdown_inline',
     'tsx',
+    'typescript',
+    'javascript',
+    'dockerfile',
+    'gitignore',
+    'graphql',
     'lua',
     'json',
     'css',
@@ -21,9 +30,14 @@ ts.setup {
     'go',
     'python',
     'rust',
-    'svelte'
+    'svelte',
+    'solidity'
   },
   autotag = {
     enable = true,
+  },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
   }
 }

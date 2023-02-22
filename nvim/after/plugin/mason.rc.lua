@@ -7,16 +7,16 @@ if (not status2) then return end
 mason.setup {
   lspconfig.setup {
     ensure_installed = { 
-      'cssls',
-      'dockerls',
-      'jsonls',
-      'tsserver',
-      'yamlls',
-      'tailwindcss', 
-      'eslint',
-      'html',
-      'astro',
-      'solidity',
+      -- 'cssls',
+      -- 'dockerls',
+      -- 'jsonls',
+      -- 'tsserver',
+      -- 'yamlls',
+      -- 'tailwindcss', 
+      -- 'eslint',
+      -- 'html',
+      -- 'astro',
+      -- 'solidity',
     }
   }
 }

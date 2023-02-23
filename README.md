@@ -1,3 +1,9 @@
+# Look and feel!
+
+![Screenshot from 2023-02-23 10-51-16](https://user-images.githubusercontent.com/54769706/220959421-f8cf7050-4f98-45f3-9d7c-4d5e8d43527e.png)
+
+![Screenshot from 2023-02-23 10-53-59](https://user-images.githubusercontent.com/54769706/220960135-441771fb-547c-49d4-8589-f80dacf08246.png)
+
 # Mappings
 
 ## Tmux Mappings

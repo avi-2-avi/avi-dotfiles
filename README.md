@@ -15,6 +15,8 @@
 | `<C-r><C-l>` | Resize right         |
 | `<C-r><C-:>` | Split horizontally   |
 | `<C-r><C-">` | Split vertically     |
+| `<C-r><{>`   | Swap pane up         |
+| `<C-r><}>`   | Swap pane down       |
 
 ## Nvim Mappings
 

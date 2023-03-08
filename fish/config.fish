@@ -41,6 +41,8 @@ set -g theme_display_node yes
 # Aliases
 # alias ls "exa --icons"
 
+alias f "fzf --bind 'enter:become(vim {})'"
+
 alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
